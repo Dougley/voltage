@@ -1,0 +1,31 @@
+{
+  "private": true,
+  "name": "core",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Remco <hey@dougley.com>",
+  "homepage": "https://github.com/Dougley/discord-worker#readme",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "directories": {
+    "src": "src",
+    "test": "tests"
+  },
+  "files": [
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dougley/discord-worker.git"
+  },
+  "scripts": {
+    "test": "jest --config ../../jestconfig.json --verbose",
+    "format": "eslint src --fix",
+    "compile": "tsc",
+    "bundle": "esbuild src/index.ts --bundle --format=esm --minify --outfile=dist/worker.js",
+    "deploy": "wrangler publish"
+  },
+  "bugs": {
+    "url": "https://github.com/Dougley/discord-worker/issues"
+  }
+}

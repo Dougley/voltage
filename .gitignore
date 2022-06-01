@@ -1,0 +1,12 @@
+/target
+packages/*/dist
+**/*.rs.bk
+Cargo.lock
+bin/
+pkg/
+wasm-pack.log
+worker/
+node_modules/
+.cargo-ok
+lerna-debug.log
+npm-debug.log

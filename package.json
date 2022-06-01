@@ -1,0 +1,38 @@
+{
+  "name": "root",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@cloudflare/workers-types": "^3.11.0",
+    "@types/jest": "^27.5.1",
+    "@types/service-worker-mock": "^2.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "@typescript-eslint/parser": "^5.27.0",
+    "discord-api-types": "^0.33.1",
+    "eslint": "^8.16.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.4.6",
+    "eslint-plugin-n": "^15.2.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "jest": "^28.1.0",
+    "lerna": "^4.0.0",
+    "service-worker-mock": "^2.0.5",
+    "ts-jest": "^28.0.3",
+    "ts-loader": "^9.3.0",
+    "typescript": "^4.7.2",
+    "wrangler": "^2.0.7"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "deploy": "lerna run --ignore core deploy && lerna run --scope core deploy",
+    "deploy:discord": "lerna run --ignore core deploy:discord && lerna run --scope core deploy:discord",
+    "test": "lerna run test",
+    "test:ci": "lerna run test --since main --stream"
+  },
+  "dependencies": {
+    "itty-router": "^2.6.1"
+  }
+}

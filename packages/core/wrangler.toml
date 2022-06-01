@@ -1,0 +1,9 @@
+compatibility_date = "2021-11-12"
+
+main = "src/index.ts"
+name = "discord-worker"
+workers_dev = true
+
+[[rules]]
+type = "ESModule"
+globs = [ "**/*.ts" ]
