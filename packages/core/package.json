@@ -1,10 +1,10 @@
 {
   "private": true,
-  "name": "core",
+  "name": "@dougley/zipzap-core",
   "version": "0.0.0",
-  "description": "> TODO: description",
+  "description": "Lightning fast Discord interactions",
   "author": "Remco <hey@dougley.com>",
-  "homepage": "https://github.com/Dougley/discord-worker#readme",
+  "homepage": "https://github.com/Dougley/zipzap#readme",
   "license": "MIT",
   "main": "src/index.ts",
   "directories": {
@@ -16,7 +16,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dougley/discord-worker.git"
+    "url": "git+https://github.com/Dougley/zipzap.git"
   },
   "scripts": {
     "test": "jest --config ../../jestconfig.json --verbose",
@@ -26,6 +26,6 @@
     "deploy": "wrangler publish"
   },
   "bugs": {
-    "url": "https://github.com/Dougley/discord-worker/issues"
+    "url": "https://github.com/Dougley/zipzap/issues"
   }
 }

@@ -1,11 +1,4 @@
-# `core`
+# `@dougley/zipzap-core`
 
-> TODO: description
+The core is responsible for verifying the integrity of incoming data, and for	distributing the data to the commander.
 
-## Usage
-
-```
-const core = require('core');
-
-// TODO: DEMONSTRATE API
-```

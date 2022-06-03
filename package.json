@@ -1,5 +1,6 @@
 {
-  "name": "root",
+  "name": "@dougley/zipzap",
+  "description": "Lightning fast Discord interactions",
   "type": "module",
   "private": true,
   "devDependencies": {
