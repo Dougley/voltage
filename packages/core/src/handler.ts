@@ -1,4 +1,4 @@
-import { APIInteraction, InteractionType, InteractionResponseType } from 'discord-api-types/v10'
+import { APIInteraction, InteractionType, InteractionResponseType } from 'discord-api-types/payloads/v10'
 import { Router, Request as IttyRequest } from 'itty-router'
 import { concatUint8Arrays, valueToUint8Array } from './utils'
 
@@ -64,4 +64,4 @@ router.post('/:token', verify, async (req, env) => {
   return await handler.fetch(req)
 })
 
-router.all('*', () => Response.redirect('https://github.com/Dougley/discord-worker'))
+router.all('*', () => Response.redirect('https://github.com/Dougley/zipzap'))
