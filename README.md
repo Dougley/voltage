@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  Lightning fast Discord interactions using Cloudflare Workers.
+  <b>Lightning fast Discord interactions using Cloudflare Workers.</b>
 </p>
 
 <p align="center">
